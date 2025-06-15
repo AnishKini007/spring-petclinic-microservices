@@ -72,7 +72,7 @@ class OwnerResource {
     /**
      * Read List of Owners
      */
-    @GetMapping
+    @GetMapping(path = {"", "/"})
     public List<Owner> findAll() {
         return ownerRepository.findAll();
     }
